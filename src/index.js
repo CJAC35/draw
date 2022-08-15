@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 // sockets
 require('./sockets')(io);
